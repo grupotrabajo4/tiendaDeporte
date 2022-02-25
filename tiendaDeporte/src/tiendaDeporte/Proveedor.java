@@ -34,20 +34,20 @@ public class Proveedor extends Persona {
 	/**
 	 * <H2Funcion_dar_alta_a_Proveedor<H2>
 	 * @author BYJOSEGRC
-	 * @return nuevo que es el Proveedor Nuevo
+	 * @return nuevoProveedor
 	 * @version 0.1
 	 */
 	public Proveedor alta() {
 		
-	Proveedor nuevo = new Proveedor("Pepe","Gomez","Perez");
-		return nuevo;
+	Proveedor nuevoProveedor = new Proveedor("Pepe","Gomez","Perez");
+		return nuevoProveedor;
 		
 	}
 	
 	/**
 	 * <H2GET nombreProveedor<H2>
 	 * @author BYJOSEGRC
-	 * @return nombre
+	 * @return nombreProveedor
 	 * @version 0.1
 	 */
 	public String getNombreProveedor() {
