@@ -1,4 +1,4 @@
-package tiendadeporte;
+package tiendaDeporte;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -71,7 +71,12 @@ public class Principal {
         for(int i=0;i<n;i++){
             System.out.println("Vamos a introducir " + n + " proveedores:");
             System.out.println("Introduce el nombre del proveedor " + (i+1) + ":");
-            proveedores.add(new Proveedor(escaner.nextLine()));
+            String nombre = escaner.nextLine();
+            System.out.println("Introduce el primer apellido del proveedor " + (i+1) + ":");
+            String apellido1 = escaner.nextLine();
+            System.out.println("Introduce el segundo apellido del proveedor " + (i+1) + ":");
+            String apellido2 = escaner.nextLine();
+            proveedores.add(new Proveedor(nombre, apellido1, apellido2));
         }
     }
     
@@ -88,7 +93,12 @@ public class Principal {
         for(int i=0;i<n;i++){
             System.out.println("Vamos a introducir " + n + " articulos:");
             System.out.println("Introduce el nombre del articulo " + (i+1) + ":");
-            articulos.add(new Articulo(escaner.nextLine()));
+            String nombre = escaner.nextLine();
+            System.out.println("Introduce el precio del articulo " + (i+1) + ":");
+            double precio = escaner.nextDouble();
+            System.out.println("Introduce la descripción del articulo " + (i+1) + ":");
+            String descripcion = escaner.nextLine();
+            articulos.add(new Articulo(nombre, precio, descripcion));
         }
     }
     
