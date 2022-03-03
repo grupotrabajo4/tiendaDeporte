@@ -1,17 +1,11 @@
 package tiendaDeporte;
 /**
- * <H2>CREACION CLASE PROVEEDOR<H2>
+ * <H2>CREACION CLASE PROVEEDOR</H2>
  * @author BYJOSEGRC
  * @version 0.1
  */
 
 public class Proveedor extends Persona {
-
-	/**
-	 * <H2>ATRIBUTOS<H2>
-	 * @author BYJOSEGRC
-	 * @version 0.1
-	 */
 	
 	String nombreProveedor;
 	String apellido1;
@@ -20,7 +14,7 @@ public class Proveedor extends Persona {
 	
 	
 	/**
-	 * <H2>CONSTRUCTOR<H2>
+	 * <H2>CONSTRUCTOR</H2>
 	 * @author BYJOSEGRC
 	 * @version 0.1
 	 */
@@ -32,7 +26,7 @@ public class Proveedor extends Persona {
 	}
 	
 	/**
-	 * <H2Funcion_dar_alta_a_Proveedor<H2>
+	 * <H2>Funcion_dar_alta_a_Proveedor</H2>
 	 * @author BYJOSEGRC
 	 * @return nuevoProveedor
 	 * @version 0.1
@@ -45,7 +39,7 @@ public class Proveedor extends Persona {
 	}
 	
 	/**
-	 * <H2GET nombreProveedor<H2>
+	 * <H2>GET nombreProveedor</H2>
 	 * @author BYJOSEGRC
 	 * @return nombreProveedor
 	 * @version 0.1
@@ -55,7 +49,7 @@ public class Proveedor extends Persona {
     }
 	
 	/**
-	 * <H2GET nombreProveedor<H2>
+	 * <H2>GET nombreProveedor</H2>
 	 * @author BYJOSEGRC
 	 * @return apellido1
 	 * @version 0.1
@@ -66,7 +60,7 @@ public class Proveedor extends Persona {
     }
 	
 	/**
-	 * <H2GET nombreProveedor<H2>
+	 * <H2>GET nombreProveedor</H2>
 	 * @author BYJOSEGRC
 	 * @return apellido2
 	 * @version 0.1

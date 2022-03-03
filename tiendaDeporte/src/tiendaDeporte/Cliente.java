@@ -7,7 +7,6 @@ package tiendaDeporte;
 /**
  **<H2>Clase cliente que hereda de la clase Empleado</H2>
  * @author dinam
- * @param enum para enumerar tipos de empleado
  */
 public class Cliente implements Empleado {
     //atributos

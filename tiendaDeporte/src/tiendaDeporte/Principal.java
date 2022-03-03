@@ -18,24 +18,9 @@ import java.util.Scanner;
  */
 public class Principal {
     
-	/**
 
-	 * <H2>Atributo escaner</H2>
-
-	 * Lee por pantalla
-
-	 * @param System.in
-
-	 */
     static Scanner escaner = new Scanner(System.in);
     
-    /**
-
-     * <H2>Atributos Cliente, Articulo y Proveedor</H2>
-
-     * Listas de clientes, artículos y proveedores
-
-     */
     static ArrayList<Cliente> clientes = new ArrayList<Cliente>();
     static ArrayList<Articulo> articulos = new ArrayList<Articulo>();
     static ArrayList<Proveedor> proveedores = new ArrayList<Proveedor>();
@@ -56,7 +41,6 @@ public class Principal {
             clientes.add(new Cliente(escaner.nextLine()));
         }
     }
-    /**
 
  	/**
 
@@ -96,6 +80,7 @@ public class Principal {
             String nombre = escaner.nextLine();
             System.out.println("Introduce el precio del articulo " + (i+1) + ":");
             double precio = escaner.nextDouble();
+            escaner.nextLine();
             System.out.println("Introduce la descripción del articulo " + (i+1) + ":");
             String descripcion = escaner.nextLine();
             articulos.add(new Articulo(nombre, precio, descripcion));
@@ -117,10 +102,20 @@ public class Principal {
         
         introducirArticulos(2);
         
-        System.out.println("Lista de clientes: " + clientes);
         
-        System.out.println("Lista de proveedores: " + proveedores);
+        System.out.println("Lista de clientes: ");
+        for(int i=0;i<clientes.size();i++) {
+        	System.out.print(clientes.get(i).getNombre());
+        }
         
-        System.out.println("Lista de articulos: " + articulos);
+        System.out.println("Lista de proveedores: ");
+        for(int i=0;i<articulos.size();i++) {
+        	System.out.print(proveedores.get(i).getNombreProveedor());
+        }
+        
+        System.out.println("Lista de articulos: ");
+        for(int i=0;i<articulos.size();i++) {
+        	System.out.print(articulos.get(i).getCodigo());
+        }
     }
 }
