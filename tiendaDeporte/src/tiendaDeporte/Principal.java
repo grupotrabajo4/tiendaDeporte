@@ -76,7 +76,7 @@ public class Principal {
     public static void introducirArticulos(int n){
         for(int i=0;i<n;i++){
             System.out.println("Vamos a introducir " + n + " articulos:");
-            System.out.println("Introduce el nombre del articulo " + (i+1) + ":");
+            System.out.println("Introduce el nombre del articulo" + (i+1) + " :");
             String nombre = escaner.nextLine();
             System.out.println("Introduce el precio del articulo " + (i+1) + ":");
             double precio = escaner.nextDouble();
